@@ -1,0 +1,79 @@
+ragel
+------------------------------------------
+Ragel compiles executable finite state machines from regular languages. 
+Ragel targets C, C++, Objective-C, D, Java and Ruby. Ragel state 
+machines can not only recognize byte sequences as regular expression 
+machines do, but can also execute code at arbitrary points in the 
+recognition of a regular language. Code embedding is done using inline 
+operators that do not disrupt the regular language syntax.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  gcc-core
+  gcc-g++
+  gcc-gdc
+  gcc-objc
+  jikes
+  ruby
+
+Additional build requirements:
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
+  tetex
+  transfig
+
+Canonical website:
+  http://www.cs.queensu.ca/~thurston/ragel/
+
+Canonical download:
+  http://www.cs.queensu.ca/~thurston/ragel/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ragel-5.25-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ragel-5.25-X.cygport all
+
+This will create:
+  /usr/src/ragel-5.25-X-src.tar.bz2
+  /usr/src/ragel-5.25-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/ragel.exe
+  /usr/bin/rlgen-cd.exe
+  /usr/bin/rlgen-dot.exe
+  /usr/bin/rlgen-java.exe
+  /usr/bin/rlgen-ruby.exe
+  /usr/share/doc/ragel-5.25/COPYING
+  /usr/share/doc/ragel-5.25/CREDITS
+  /usr/share/doc/ragel-5.25/ChangeLog
+  /usr/share/doc/ragel-5.25/README
+  /usr/share/doc/ragel-5.25/TODO
+  /usr/share/doc/ragel-5.25/ragel-guide.pdf
+  /usr/share/man/man1/ragel.1.gz
+  /usr/share/man/man1/rlgen-cd.1.gz
+  /usr/share/man/man1/rlgen-dot.1.gz
+  /usr/share/man/man1/rlgen-java.1.gz
+  /usr/share/man/man1/rlgen-ruby.1.gz
+  /usr/share/vim/vimfiles/syntax/ragel.vim
+
+------------------
+
+Port Notes:
+
+----- version 5.25-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

@@ -1,0 +1,32 @@
+inherit java
+
+DESCRIPTION="Finite state machine compiler"
+HOMEPAGE="http://www.cs.queensu.ca/~thurston/ragel/"
+SRC_URI="http://www.cs.queensu.ca/~thurston/ragel/${P}.tar.gz"
+
+src_compile() {
+	cd ${S}
+	lndirs
+
+	cd ${B}
+	cygconf
+	cygmake
+	cygmake -C doc
+}
+
+src_test() {
+	cd ${B}/test
+	make
+}
+
+src_install() {
+	cd ${B}
+	USE_DESTDIR=0
+	cyginstall
+
+	doman doc/*.1
+	dodoc doc/ragel-guide.pdf
+
+	insinto /usr/share/vim/vimfiles/syntax
+	doins ragel.vim
+}
