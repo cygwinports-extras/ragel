@@ -1,5 +1,5 @@
 category: Devel Java Ruby
-requires: cygwin gcc-core gcc-g++ gcc-gdc gcc-objc jikes ruby
+requires: gcc-core gcc-g++ gcc-gdc gcc-objc jikes ruby
 sdesc: "Finite state machine compiler"
 ldesc: "Ragel compiles executable finite state machines from regular 
 languages. Ragel targets C, C++, Objective-C, D, Java and Ruby. Ragel 
