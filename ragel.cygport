@@ -1,9 +1,9 @@
 inherit vim
 
 NAME="ragel"
-VERSION=6.6
+VERSION=6.8
 RELEASE=1
-CATEGORY="Devel Java Ruby"
+CATEGORY="Devel"
 SUMMARY="Finite state machine compiler"
 DESCRIPTION="Ragel compiles executable finite state machines from regular
 languages. Ragel targets C, C++, Objective-C, D, Java and Ruby. Ragel state
